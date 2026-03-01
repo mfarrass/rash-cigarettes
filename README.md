@@ -3,7 +3,7 @@
 Modern e-commerce "Rash Cigarettes" UI built using React + Vite.
 
 ## 🚀 Live Demo
-🔗 https://rash-cigarettes.vercel.app
+🔗 <a href="https://rash-cigarettes.vercel.app" target="_blank">https://rash-cigarettes.vercel.app</a>
 
 ## 🛠 Tech Stack
 - React 18
