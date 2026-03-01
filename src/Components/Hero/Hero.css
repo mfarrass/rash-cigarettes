@@ -1,0 +1,69 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Antonio:wght@100..700&family=Bungee&family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Ewert&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.hero_container {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px 140px 20px;
+    overflow: hidden;
+}
+
+.hero_content {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    max-width: 1400px;
+}
+
+/* TITLE */
+.hero_content h1 {
+    font-size: clamp(3rem, 10vw, 12rem);
+    font-family: "Antonio", sans-serif;
+    font-weight: 600;
+    line-height: 0.9;
+}
+
+/* IMAGE */
+.hero_img {
+    width: clamp(250px, 42vw, 760px);
+    height: auto;
+    margin-top: -6rem;
+    position: relative;
+    z-index: 2;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1024px) {
+
+    .hero_container {
+        min-height: 90vh;
+        padding: 80px 20px 140px 20px;
+    }
+
+    .hero_img {
+        margin-top: -4rem;
+    }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    .hero_container {
+        min-height: auto;
+        padding: 60px 20px;
+    }
+
+    .hero_content h1 {
+        line-height: 1;
+    }
+
+    .hero_img {
+        margin-top: -2rem;
+        width: 80%;
+    }
+}

@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@400;600&family=Roboto:wght@300;400;500;700&display=swap');
+
+/* GLOBAL FONT */
+
+.cart_container{
+    font-family: 'Roboto', sans-serif;
+    max-width: 1200px;
+    margin: 60px auto;
+    display: flex;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+/* LEFT */
+
+.cart_left{
+    flex: 2;
+    background: #fff;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.04);
+}
+
+/* RIGHT */
+
+.cart_right{
+    flex: 1;
+    height: fit-content;
+    background: #fff;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.04);
+    position: sticky;
+    top: 40px;
+}
+
+/* TITLE */
+
+.cart_title{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.cart_title h1{
+    font-family:'Antonio', sans-serif;
+    letter-spacing:1px;
+    font-size:28px;
+}
+
+.delete_cart{
+    font-size:24px;
+    cursor:pointer;
+    color:#ff4d4d;
+    transition:.25s;
+}
+
+.delete_cart:hover{
+    transform:scale(1.2);
+}
+
+/* HEADER */
+
+.cart_header{
+    display:grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    padding-bottom:12px;
+    border-bottom:1px solid #eee;
+    color:#888;
+    font-size:14px;
+}
+
+/* ITEM */
+
+.cart_item{
+    display:grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    align-items:center;
+    padding:25px 0;
+    border-bottom:1px solid #f3f3f3;
+    transition:.2s;
+}
+
+.cart_item:hover{
+    background:#fafafa;
+}
+
+.empty_cart{
+    height:250px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22px;
+    font-weight:700;
+    color:#444;
+}
+
+/* PRODUCT */
+
+.cart_product_details{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.cart_product_details img{
+    width:85px;
+    height:85px;
+    object-fit:cover;
+    border-radius:14px;
+}
+
+.product_info h3{
+    font-size:16px;
+    font-weight:500;
+    max-width:240px;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+
+.product_info svg{
+    margin-top:6px;
+    cursor:pointer;
+    color:#aaa;
+}
+
+.product_info svg:hover{
+    color:#ff4d4d;
+}
+
+/* QUANTITY */
+
+.quantity{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+}
+
+.quantity button{
+    width:36px;
+    height:36px;
+    border-radius:10px;
+    border:none;
+    background:#f1f3f8;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.quantity button:hover{
+    background:#e7eaf3;
+}
+
+.quantity span{
+    font-weight:500;
+}
+
+/* PRICE */
+
+.price,
+.total{
+    text-align:right;
+    font-weight:500;
+}
+
+/* SUMMARY */
+
+.cart_right h2{
+    font-family:'Antonio';
+    letter-spacing:1px;
+    margin-bottom:25px;
+}
+
+.summary_item{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:18px;
+}
+
+.total_cost{
+    border-top:1px solid #eee;
+    padding-top:15px;
+    font-weight:600;
+    font-size:18px;
+}
+
+/* BUTTON */
+
+.checkout_btn{
+    width:100%;
+    padding:18px;
+    border:none;
+    border-radius:14px;
+    background:linear-gradient(135deg,#6366f1,#4f46e5);
+    color:white;
+    font-weight:600;
+    font-size:16px;
+    margin-top:30px;
+    cursor:pointer;
+    transition:.25s;
+}
+
+.checkout_btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 15px 25px rgba(99,102,241,.35);
+}
+
+
+/* ============================= */
+/* 🔥 RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 1024px){
+
+.cart_container{
+    flex-direction:column;
+}
+
+.cart_right{
+    position:relative;
+    top:0;
+}
+
+}
+
+
+@media (max-width: 768px){
+
+.cart_left,
+.cart_right{
+    padding:25px;
+}
+
+/* hide table header */
+.cart_header{
+    display:none;
+}
+
+/* stack item */
+.cart_item{
+    grid-template-columns: 1fr;
+    gap:15px;
+}
+
+/* product row */
+.cart_product_details{
+    align-items:flex-start;
+}
+
+/* quantity + price row */
+.quantity{
+    justify-content:flex-start;
+}
+
+.price,
+.total{
+    text-align:left;
+}
+
+}
