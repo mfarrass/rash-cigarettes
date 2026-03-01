@@ -1,6 +1,7 @@
 # Rash Cigarettes UI
 
-Modern e-commerce "Rash Cigarettes" UI built using React + Vite.
+A mini e-commerce UI project called "Rash Cigarettes", built with React + Vite.
+This project focuses on modern UI layout, responsive design, and reusable component structure for frontend practice.
 
 ## 🚀 Live Demo
 🔗 <a href="https://rash-cigarettes.vercel.app" target="_blank">https://rash-cigarettes.vercel.app</a>
