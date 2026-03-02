@@ -38,7 +38,7 @@ const Cart = () => {
             <h2>Total Belanja</h2>
             <div className="summary_item total_cost">
               <span>Subtotal</span>
-              <span>${total}</span>
+              <span>Rp.{total}</span>
             </div>
             <div className="summary_item">
             <span>Biaya Pengiriman</span>
@@ -46,7 +46,7 @@ const Cart = () => {
             </div>
             <div className="summary_item">
               <span>Total Biaya</span>
-              <span>${total}</span>
+              <span>Rp.{total}</span>
             </div>
             <button
               className="checkout_btn"

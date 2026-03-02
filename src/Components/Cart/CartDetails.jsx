@@ -29,8 +29,8 @@ const CartDetails = ({item}) => {
                 <IoMdAdd />
             </button>
         </div>
-        <div className="price">${price}</div>
-        <div className="total">{price * amount}</div>
+        <div className="price">Rp.{price}</div>
+        <div className="total">Rp.{price * amount}</div>
       </div>
     </div>
   )
